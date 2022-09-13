@@ -1,8 +1,8 @@
 package com.jkl4o4.jokeapp
 
-class Joke(private val text: String) {
+class Joke(private val text: String, private val punchline: String) {
 
-    fun getJokeUi() = text
+    fun getJokeUi() = "$text\n$punchline"
 }
 
 interface JokeFailure {
